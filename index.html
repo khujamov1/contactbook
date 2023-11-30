@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-form-wrapper">
+            <form class="contact-form js-contact-form">
+                <input type="text" class="name-input js-contact-name" placeholder="First name" required>
+                <input type="text" class="job-input js-contact-job" placeholder="Profession">
+                <input type="tel" value="+998" class="tel-input js-contact-number" placeholder="Phone number" required>
+                <button type="submit" class="form-btn">Add contact</button>
+            </form>
+            <ul class="contact-list js-contact-list">
+
+            </ul>
+
+            <template class="js-contact-template">
+                <li class="contact-item">
+                    <strong class="contact-user"></strong>
+                    <strong class="contact-job"></strong>
+                    <a class="contact-number"></a>
+                    <button type="button" class="contact-delete-btn"></button>
+                </li>
+            </template>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
